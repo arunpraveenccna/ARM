@@ -1,0 +1,91 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralus"
+        },
+        "networkInterfaceName": {
+            "value": "vm1-us-central972"
+        },
+        "networkSecurityGroupName": {
+            "value": "VM1-US-Central-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "default-allow-rdp",
+                    "properties": {
+                        "priority": 1000,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceApplicationSecurityGroups": [],
+                        "destinationApplicationSecurityGroups": [],
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "Subnet1-US-Central"
+        },
+        "virtualNetworkName": {
+            "value": "VNET1-US-Central"
+        },
+        "addressPrefixes": {
+            "value": [
+                "192.168.0.0/24"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "Subnet1-US-Central",
+                    "properties": {
+                        "addressPrefix": "192.168.0.0/25"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName": {
+            "value": "VM1-US-Central-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "VM1-US-Central"
+        },
+        "virtualMachineComputerName": {
+            "value": "VM1-US-Central"
+        },
+        "virtualMachineRG": {
+            "value": "VM1-US-Central_group"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "apraveen"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        }
+    }
+}
