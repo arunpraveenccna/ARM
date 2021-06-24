@@ -6,10 +6,10 @@
             "value": "centralus"
         },
         "networkInterfaceName": {
-            "value": "vm1-us-central972"
+            "value": "vm2-us-central972"
         },
         "networkSecurityGroupName": {
-            "value": "VM1-US-Central-nsg"
+            "value": "VM2-US-Central-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -31,28 +31,28 @@
             ]
         },
         "subnetName": {
-            "value": "Subnet1-US-Central"
+            "value": "Subnet2-US-Central"
         },
         "virtualNetworkName": {
-            "value": "VNET1-US-Central"
+            "value": "VNET2-US-Central"
         },
         "addressPrefixes": {
             "value": [
-                "192.168.0.0/24"
+                "192.168.1.0/24"
             ]
         },
         "subnets": {
             "value": [
                 {
-                    "name": "Subnet1-US-Central",
+                    "name": "Subnet2-US-Central",
                     "properties": {
-                        "addressPrefix": "192.168.0.0/25"
+                        "addressPrefix": "192.168.1.0/25"
                     }
                 }
             ]
         },
         "publicIpAddressName": {
-            "value": "VM1-US-Central-ip"
+            "value": "VM2-US-Central-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -61,10 +61,10 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "VM1-US-Central"
+            "value": "VM2-US-Central"
         },
         "virtualMachineComputerName": {
-            "value": "VM1-US-Central"
+            "value": "VM2-US-Central"
         },
         "virtualMachineRG": {
             "value": "VM1-US-Central_group"
@@ -79,7 +79,7 @@
             "value": "apraveen"
         },
         "adminPassword": {
-            "value": null
+            "value": Hospira1$
         },
         "patchMode": {
             "value": "AutomaticByOS"
